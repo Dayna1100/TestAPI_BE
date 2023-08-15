@@ -3,7 +3,7 @@ const cors = require("cors")
 const studentRoutes = require("./routes/students")
 
 const app = express()
-
+//cors allows access to front end requests
 app.use(cors())
 app.use(express.json())
 
