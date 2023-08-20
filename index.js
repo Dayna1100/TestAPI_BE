@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 app.get("/studnets", (req, res) => {
   res.send({students});
 });
-app.use("/students", studentRouter);
+app.use("/api", studentRouter);
 
 const port = process.env.PORT || 4000;
 

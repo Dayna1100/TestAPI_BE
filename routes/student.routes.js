@@ -4,7 +4,7 @@ const studentRouter = express.Router();
 import studentController from "../controllers/studentcontrollers.js"
 
 //get all the students
-studentRouter.get("/", studentController.findAll)
+studentRouter.get("/students", studentController.findAll)
 
 //find by ID
 studentRouter.get("/students/:id", studentController.findById)
